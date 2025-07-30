@@ -1,0 +1,704 @@
+*{
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+  font-family: sans-serif;
+}
+:root{
+  --darkgrey:rgb(194,194,194);
+  --lightgreen:#748873;
+}
+#Navigation{
+  display: flex;
+  flex:10;
+  padding:10px 10px 10px 10px;
+  background-color: rgb(249, 249, 249);
+}
+#menuline{
+  flex: 1;
+  padding: 2px 5px 2px 5px;
+
+}
+#menuline ion-icon{
+  font-size: 26px;
+  cursor: pointer;
+}
+#logo{
+  flex:1;
+  padding: 2px 5px 2px 5px;
+
+}
+#logo img{
+  width:40px;
+  height:30px;
+}
+#searchbar{
+  flex: 13;
+  display: flex;
+  justify-content: center;
+}
+#account{
+  flex:1;
+  padding: 7px 3px 0px 10px;
+  cursor: pointer;
+  border:1px solid black;
+  border-radius: 10px;
+  /* text-align: center; */
+
+}
+#account ion-icon{
+  font-size: 26px;
+}
+#searchbox{
+  display: flex;
+  width:630px;
+  background-color: white;
+  height:45px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+#searchbox input{
+  width:550px;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 2px 5px 2px 5px;
+  font-size: 18px;
+  /* padding:2px 5px 2px 5px; */
+  
+}
+#searchbox ion-icon{
+  font-size: 18px;
+  font-weight: bold;
+}
+#searchicon{
+  padding:2px 5px 2px 5px;
+  width:80px;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-left: 1px solid gray;
+  background-color: rgb(230, 230, 230);
+
+  /* background-color: aqua; */
+  
+}
+.Mactive{
+
+  #innerbody{
+    display: grid;
+    grid-template-columns:1fr 10fr;
+  
+  }
+  #Minnerbody #sidemenu{
+    position: absolute;
+    display:block;
+    height:100vh;
+  }
+  .menu{
+    display: flex;
+    gap: 10px;
+    padding:10px 5px 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  .menu ion-icon
+  {
+    font-size: 1.5rem;
+  }
+  .menuname{
+    width:130px;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+}
+.Minactive{
+  #innerbody{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+  }
+  #Minnerbody #sidemenu{
+    position: absolute;
+    display:none;
+  }
+  .menuname{
+    width:70px;
+    font-size: 12px;
+  }
+  .menu{
+    padding:10px 5px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  .menu ion-icon{
+    font-size: 1.5rem;
+  }
+  #AccountManagement{
+    display: none;
+  }
+  
+}
+.menu:hover{
+  background-color: rgb(201, 201, 201);
+}
+.actmenu:hover{
+  background-color: rgb(201, 201, 201);
+}
+#innerbody > div{
+  height: 100vh;
+}
+#sidemenu{
+  background-color: rgb(235, 236, 236);
+}
+#AccountManagement #head{
+  padding:10px 10px 10px 10px;
+  font-weight: bold;
+}
+.actmenu{
+  display: flex;
+  gap: 10px;
+  padding:10px 5px 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.actmenu ion-icon
+  {
+    font-size: 1.5rem;
+  }
+  .actmenuname{
+    width:130px;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  #Subscriptions #head{
+    font-weight: bold;
+    padding:10px;
+  }
+  #filters{
+    display: flex;
+    flex: 6;
+    /* padding-left: 20px; */
+    gap:10px;
+    overflow: hidden;
+  }
+  #filters div{
+  
+    flex: 1;
+    padding:5px 10px 5px 10px;
+    /* text-align: center; */
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-width: 80px; */
+
+  }
+  /* .Aactive{
+    background-color:blue;
+    color:white;
+    } */
+    .Finactive{
+     background-color: var(--darkgrey);
+    /* background-color:blue; */
+    /* color:white; */
+   }
+   .Factive{
+    background-color:black;
+    color:white;
+   }
+   #loginpagenav{
+    display: flex;
+    flex:2;
+    gap:20px;
+    background-color: rgb(127, 127, 126);
+    height: 3.1rem;
+    align-items: center;
+   }
+   #loginpagenav #logo{
+    flex:6;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    gap:10px;
+   }
+   #loginpagenav #homebut{
+    flex:1;
+    font-weight: bold;
+    cursor: pointer;
+   }
+   #loginbox{
+    width:22rem;
+    height:24rem;
+    background-color: rgb(218, 219, 220);
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    
+   }
+   #loginbox button{
+    width:180px;
+    height:35px;
+    padding:5px 5px 5px 5px;
+    margin-top: 30px;
+    font-size: 1rem;
+    background-color: var(--lightgreen);
+    border: none;
+    border-radius: 7px;
+    color:white;
+    cursor: pointer;
+   }
+   #Registerbox{
+    width:22rem;
+    height:29rem;
+    background-color: rgb(218, 219, 220);
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    position: absolute;
+    margin-left: -200px;
+    
+   }
+   #Registerbox button{
+    
+    width:180px;
+    height:35px;
+    padding:5px 5px 5px 5px;
+    margin-top: 30px;
+    font-size: 1rem;
+    background-color: var(--lightgreen);
+    border: none;
+    border-radius: 7px;
+    color:white;
+    cursor: pointer;
+   }
+   .Logactive{
+    #Registerbox{
+      display: none;
+    }
+    #Loginbox{
+      display: block;
+    }
+   }
+   .Regactive{
+    #Registerbox{
+      display: block;
+    }
+    #loginbox{
+      display: none;
+    }
+   }
+   
+   #loginbody{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 30px;
+   }
+   .inputfield div{
+    margin-top: 10px;
+   }
+   .inputfield input{
+    width:320px;
+    height:30px;
+    padding:5px 5px 5px 5px;
+    font-size: 1rem;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+   }
+   #cardcontainer{
+    width:300px;
+    height:400px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+  
+}
+   #videoscontainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+    gap:3rem;
+    margin:20px 20px 20px 20px;
+   }
+   #videoplayerInnerbody{
+    display: grid;
+    grid-template-columns:5fr 2fr;
+   }
+   #videoplayerInnerbody > div{
+    height:100vh;
+   }
+   #videoplayerInnerbody iframe{
+    width:800px;
+    height:500px;
+    border-radius: 10px;
+
+   }
+   #videoplayerInnerbody #subscribebut{
+     display: flex;
+     padding:2px 2px 2px 2px;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(188, 188, 187);
+     height:30px;
+     width:100px;
+     border-radius: 5px;
+     /* cursor: pointer; */
+
+   }
+   #videoplayerInnerbody #videosuggestside{
+    padding:20px 20px 20px 20px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 7px;
+   }
+   #videosuggestside .item{
+    margin-top: 20px;
+    height:50px;
+    display: flex;
+    gap:10px;
+    cursor: pointer;
+   }
+   #videosuggestside .item:hover{
+    background-color: rgb(226, 226, 227);
+   }
+   #accountmenucontainer{
+   
+    display: flex;
+    justify-content: end;
+    
+   }
+   #accountmenucontainer > div{
+    width:150px;
+     height:194px;
+     margin-right: 20px;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    overflow: hidden;
+
+    border-radius: 7px;
+    cursor: pointer;
+   }
+   #accountinfomenu div{
+        padding-top:7px;
+        /* padding-bottom: 2px; */
+   }
+   
+   #accountinfomenu button{
+    padding:5px 5px 5px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #748873;
+    color:white;
+    cursor: pointer;
+    margin-bottom: 10px;
+   }
+   #accountinfomenu ion-icon{
+    font-size: 22px;
+   }
+   .Aminactive{
+    #accountinfomenu{
+      display: none;
+    }
+   }
+   .Amactive{
+    #accountinfomenu{
+      display: block;
+    }
+   }
+   #logoutbut{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+   }
+   #mychannel{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+   }
+   #mychannel:hover{
+    background-color: rgb(210, 209, 209);
+     
+   }
+   #logoutbut:hover{
+    background-color: rgb(210, 209, 209);
+   }
+
+   #subscribecardcontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+    padding:10px;
+    gap: 20px;
+    
+    
+  }
+  
+   #commentssection input{
+        width:250px;
+        height:22px;
+        font-size: 16px;
+        padding:5px;
+        border-radius: 7px;
+   }
+   #commentslist #options{
+    display: flex;
+    gap:10px;
+   }
+   #Editcommentinput{
+    width:250px;
+    height:190px;
+    background-color: rgb(236, 236, 236);
+    position: fixed;
+    padding:0px 0px 5px 5px;
+    margin:-500px 0px 0px 550px;
+    border-radius: 7px;
+    z-index: 1;
+    
+
+   }
+   #Editcommentinput button{
+    padding:7px;
+    background-color: #748873;
+
+    border: none;
+    border-radius: 5px;
+    color: white;
+   }
+   #Editcommentinput div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+   }
+   #Editcommentinput #xclosebut{
+    background-color: red;
+    padding:3px;
+    border-top-right-radius: 5px;
+    width:30px;
+    cursor: pointer;
+    /* height: 25px; */
+   }
+   #Editcommentinput input{
+    width:200px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 5px;
+    border-radius: 5px;
+   }
+   #Editcommentbackground{
+    position: fixed;
+  
+    width:100vw;
+    height: 150vh;
+    background-color: aliceblue;
+    opacity: 0.4;
+    margin:-680px 0px 0px -140px;
+   }
+   .ECinactive{
+    #Editcommentinput{
+      display: none;
+    }
+    #Editcommentbackground{
+      display: none;
+    }
+   }
+   .ECactive{
+    #Editcommentinput{
+      display: block;
+    }
+    #Editcommentbackground{
+      display: block;
+    }
+   }
+   #options div{
+    cursor: pointer;
+   }
+   #options button{
+    cursor: pointer;
+    padding:5px;
+    border-radius: 7px;
+   }
+   #channelcontainer{
+    width:70vw;
+    background-color: rgb(241, 242, 242);
+    height:100vh;
+    margin:15px 0px 0px 20px;
+    padding:10px 10px 10px 10px;
+    border-radius: 7px;
+   }
+   #channelcontainer #profile{
+    width:100%;
+    height:50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   #channelcreationbox{
+    width:350px;
+    height:500px;
+    background-color: rgb(228, 228, 228);
+    position: fixed;
+    z-index: 2;
+    border-radius: 7px;
+    padding:0px 0px 10px 10px;
+    overflow: hidden;
+   }
+   #channelcreationbox #xclose{
+    width:45px;
+    height:22px;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   }
+   #channelcreationbox input{
+    width:300px;
+    height:27px;
+    padding:5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+   }
+   #channelcreationbox textarea{
+    width:300px;
+    height:100px;
+    padding:5px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+   }
+   #channelcreationbox button{
+    width:150px;
+    height:30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(241, 182, 71);
+    cursor: pointer;
+
+   }
+   
+   #channelcreationbackground{
+    width:110vw;
+    height:110vh;
+    margin-top: -100px;
+    /* margin:-100px 0px 0px -1300px; */
+    background-color:white;
+    z-index: 1;
+    opacity: 0.4;
+    /* display: flex;
+    justify-content: center; */
+    /* z-index: 1;
+    align-items: center; */
+    position: fixed;
+   }
+   #channelslist .item{
+      display: flex;
+      gap: 15px;
+   }
+   .Chactive{
+    #channelcreationbackground{
+      display: block;
+    }
+    #channelcreationbox{
+      display: block;
+    }
+   }
+   .Chinactive{
+    #channelcreationbackground{
+      display:none;
+    }
+    #channelcreationbox{
+      display:none;
+    }
+   }
+ 
+  @media (min-width:770px) and (max-width:890px)
+  {
+    .Mactive{
+
+      #innerbody{
+         display: grid;
+         grid-template-columns: 1fr 20fr;
+      }
+      .menuname{
+        width:50px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (min-width:700px) and (max-width:1000px)
+  {
+    #videoplayerInnerbody video{
+      width:400px;
+      height:300px;
+    }
+  }
+
+   @media (min-width:500px) and (max-width:850px)
+   {
+    #searchbox{
+      width:300px;
+    }
+    #searchbox input{
+       width:250px;
+
+    }
+    
+   }
+   @media (min-width:340px) and (max-width:500px)
+   {
+    #searchbox{
+      width:160px;
+    }
+    #searchbox input{
+      width:110px;
+    }
+    #searchicon{
+      width:40px;
+    }
+    #cardcontainer{
+      width:100%;
+    }
+   }
+
+   @media (min-width:340px) and (max-width:500px)
+   {
+     #videoplayerInnerbody video{
+      width:100vw;
+      height:350px;
+    }
+   }
+   @media (min-width:340px) and (max-width:700px)
+   {
+    #videoplayerInnerbody{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #videoplayerInnerbody > div{
+         height:100%;
+    }
+   }
+   @media (min-width:500px) and (max-width:700px)
+   {
+     #videoplayerInnerbody video{
+      width:100vw;
+      height:400px;
+    }
+   }
+
+
+
